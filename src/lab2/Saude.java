@@ -46,4 +46,5 @@ public class Saude {
         return this.saudeGeral;
     }
 
+
 }
