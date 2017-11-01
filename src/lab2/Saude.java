@@ -11,17 +11,28 @@ public class Saude {
     private String saudeGeral;
     private String emoji;
 
+    /**
+     *
+     */
     public Saude() {
         this.saudeFisica = "boa";
         this.saudeMental = "boa";
         this.saudeGeral = "boa";
     }
 
+    /**
+     *
+     * @param valor
+     */
     public void defineSaudeMental(String valor) {
         this.saudeMental = valor;
         checaGeral();
     }
 
+    /**
+     *
+     * @param valor
+     */
     public void defineSaudeFisica(String valor) {
         this.saudeFisica = valor;
         checaGeral();
@@ -37,11 +48,19 @@ public class Saude {
         }
     }
 
+    /**
+     *
+     * @param valor
+     */
     public void definirEmoji(String valor) {
         this.emoji = valor;
         this.saudeGeral = valor;
     }
 
+    /**
+     *
+     * @return
+     */
     public String geral() {
         return this.saudeGeral;
     }

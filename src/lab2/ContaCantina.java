@@ -18,16 +18,31 @@ public class ContaCantina {
         this.detalhes = new ArrayList();
     }
 
+    /**
+     *
+     * @param qtdItens
+     * @param valorCentavos
+     */
     public void cadastraLanche(int qtdItens, int valorCentavos) {
         this.itens += qtdItens;
         this.debitoConta += qtdItens * valorCentavos;
     }
 
+    /**
+     *
+     * @param qtdItens
+     * @param valorCentavos
+     * @param detalhes
+     */
     public void cadastrarLanche(int qtdItens, int valorCentavos, String detalhes) {
         this.cadastraLanche(qtdItens, valorCentavos);
         this.detalhes.add(detalhes);
     }
 
+    /**
+     *
+     * @return
+     */
     public String listarDetalhes() {
         String detalhe = "";
         for (int x = this.detalhes.size() - 5; x < this.detalhes.size(); x++) {
@@ -36,6 +51,10 @@ public class ContaCantina {
         return detalhe;
     }
 
+    /**
+     *
+     * @param valorCentavos
+     */
     public void pagaConta(int valorCentavos) {
         if (this.debitoConta - valorCentavos >= 0) {
             this.debitoConta -= valorCentavos;
