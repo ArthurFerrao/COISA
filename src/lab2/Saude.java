@@ -1,25 +1,14 @@
-package lab2;
+age lab2;
 
 /**
  * Reune o cunjunto de caracteristicas referente a saúde do aluno
  * @author arthurlf
  */
 public class Saude {
-   /**
-   * Saude fisica do aluno representodo como "boa", "ok" ou "fraca"
-   */
+  
     private String saudeFisica;
-   /**
-   * Saude mental do aluno representodo como "boa", "ok" ou "fraca"
-   */
     private String saudeMental;
-   /**
-   * Saude geral do aluno representodo como "boa", "ok", "fraca" ou por um emoji
-   */
     private String saudeGeral;
-   /**
-   * emoji que representa a saude do aluno 
-   */
     private String emoji;
 
     /**
